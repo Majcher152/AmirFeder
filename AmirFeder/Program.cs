@@ -20,6 +20,7 @@ namespace AmirFeder
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
+                .UseDefaultServiceProvider(options => options.ValidateScopes = false) //without it there will be an exception when you try to create db schema
                 .Build();
     }
 }
