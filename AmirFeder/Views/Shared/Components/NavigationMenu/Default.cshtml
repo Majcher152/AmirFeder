@@ -1,14 +1,41 @@
 ﻿
 @model IEnumerable<string>
 
-<a class="btn btn-block btn-light" asp-action="List" asp-controller="Product" asp-route-category="">
+@*<a class="btn btn-block btn-light" asp-action="List" asp-controller="Product" asp-route-category="">
     Strona główna
-</a>
+</a>*@
 
-@foreach (string category in Model)
-{
-    <a class="btn btn-block btn-light"
-           asp-action="List" asp-controller="Product" asp-route-category="@category">
-            @category
-        </a>
-}
+<nav class="navbar navbar-light nav-pills nav-fill nav-without-padding" style="background-color: #e3f2d2;">
+        @*<ul class="nav">*@
+            <li class="nav-item nav-link dropdown nav-without-padding">
+                <a class="dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    Blachy perforowane
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    @foreach (string category in Model)
+                    {
+                        if (category.Contains("Blach") == true && category.Contains("Blachy perforowane") == false)
+                        {
+                            <a class="dropdown-item" asp-action="List" asp-controller="Product" asp-route-category="@category">
+                                @category
+                            </a>
+                        }
+                    }
+                </div>
+            </li>
+
+            @foreach (string category in Model)
+            {
+                if (category.Contains("Blach") == false)
+                {
+                    <li class="nav-item nav-link nav-without-padding">
+                        <a class="btn btn-block btn-light btn-lg" asp-action="List" asp-controller="Product" asp-route-category="@category">
+                            @category
+                        </a>
+                    </li>
+                }
+            }
+        @*</ul>*@
+</nav>
+

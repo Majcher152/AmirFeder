@@ -23,7 +23,8 @@ namespace AmirFeder.Models
                     {
                         Name = "Blachy z otworami okrągłymi",
                         Description = "Blachy z otworami okrągłymi, średnice otworów 0,5 - 100mm, grubości blach 0,4 - 16,0mm.",
-                        Category = "Blachy perforowane"
+                        Category = "Blachy perforowane"//,
+                    //    SubCategory = "Blachy"
 
                     },
                                         new Product
@@ -51,7 +52,8 @@ namespace AmirFeder.Models
                     {
                         Name = "Blachy z otworami kwadratowymi",
                         Description = "Blachy z otworami kwadratowymi, rozmiary otworów 3,0 - 120mm, grubości blach 0,4 - 16,0mm.",
-                        Category = "Blachy perforowane"
+                        Category = "Blachy perforowane"//,
+                       // SubCategory = "Blachy"
 
                     },
                                         new Product
@@ -79,7 +81,8 @@ namespace AmirFeder.Models
                     {
                         Name = "Blachy z otworami podłużnymi",
                         Description = "Blachy z otworami podłużnymi, szerokości otworów 1,0 - 25mm, grubości blach 0,4 - 16,0mm.",
-                        Category = "Blachy perforowane"
+                        Category = "Blachy perforowane"//,
+                        //SubCategory = "Blachy"
 
                     },
                                         new Product
@@ -106,7 +109,8 @@ namespace AmirFeder.Models
                     {
                         Name = "Inne",
                         Description = "Pozostałe: wzory dekoracyjne, sita tarkowe, blachy przetłaczane, otwory miseczkowe, przetłaczane, daszkowe, łuskowe, stożkowe, \"jodełkowe\", wzory nietypowe wg specyfikacji Klienta.",
-                        Category = "Blachy perforowane"
+                        Category = "Blachy perforowane"//,
+                       // SubCategory = "Blachy"
 
                     },
                     new Product

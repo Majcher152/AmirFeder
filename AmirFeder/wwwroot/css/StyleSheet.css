@@ -1,0 +1,9 @@
+﻿
+.nav-without-padding{
+    padding: 0;
+}
+
+.nav-with-margin{
+    margin-left: 5%;
+    margin-right: 5%;
+}
